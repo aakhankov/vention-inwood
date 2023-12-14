@@ -473,4 +473,234 @@ header{
         content: '\2192'; 
         margin-left: 18px;
     }
-    
+    .package{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 150px;
+        gap: 103px;
+        margin-inline: auto;
+        width: 1919px;
+        height: 1165px;
+    }
+    .package-block{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 100px;
+        width: 1619px;
+        height: 764px;
+    }
+    .package-left-block{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 32px;
+        width: 822px;
+        height: 764px;
+    }
+    .larkin-image{
+        position: relative;
+    }
+    .larkin-img{
+        width: 822px;
+        height: 556px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 4px;
+        gap: 4px;
+        isolation: isolate;
+        border-radius: 20px;
+        position: relative;
+    }
+    .zoom-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 15px;
+        gap: 4px;
+        position: absolute;
+        width: 48px;
+        height: 50px;
+        left: 770px;
+        top: 502px;
+        background: #07484A;
+        border-radius: 16px;
+    }
+    .larkin-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px;
+        gap: auto;
+        width: 819px;
+        height: 162px;
+        font-family: "Open Sans";
+    }
+    .larkin-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 21px;
+        width: 347px;
+        height: 162px;
+    }
+    .larkin-content h2{
+        font-size: 36px;
+    }
+    .larkin-content h3{
+        font-size: 23px;
+        font-weight: 700;
+    }
+
+    .package-right-block{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+        width: 697px;
+        height: 764px;
+        
+    }
+
+    .package-larkin-description{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 25px;
+        width: 620px;
+        height: 179px;
+        font-family: "Open Sans";
+    }
+    .package-larkin-description h3{
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .button-more-description h4{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        color: #000;
+    }
+    .package-others-sets{
+        overflow-x: hidden;
+        overflow-y: auto;
+        align-self: flex-start;
+    }
+    .package-set-block{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+        width: 639px;
+        height: 183px;
+        margin-bottom: 32px;
+        margin-right: 32px;
+    }
+    .package-set-block:last-child{
+        margin-bottom: -132px;
+    }
+
+    .package-set-image{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        width: 249px;
+        height: 183px;
+        border-radius: 10px;
+    }
+
+    .set-image{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        width: 249px;
+        height: 183px;
+        border-radius: 10px;
+    }
+
+    .package-set{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        gap: 24px;
+        isolation: isolate;
+        width: 374px;
+        height: 183px;
+        border-radius: 10px;
+        position: relative; 
+    }
+    .package-zoom-button{
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 15px;
+        gap: 4px;
+        position: absolute;
+        width: 48px;
+        height: 50px;
+        left: 770px;
+        top: 502px;
+        background: #07484A;
+        border-radius: 16px;
+        left: 90%; /* Используем 50% для центрирования */
+        top: 80%; /* Используем 50% для центрирования */
+        transform: translate(-50%, -50%);
+    }
+
+    .package-set:hover{
+        background-color: #E0F6F1;
+    }
+    .package-set-block:hover .package-zoom-button {
+        display: block;
+    }
+
+    .package-set-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .package-set-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 84px;
+        
+    }
+    .package-set-2{
+        font-family: "Open Sans";
+        font-weight: 700;
+    }
+    .package-others-sets{
+        padding-bottom: 100px;
+    }
+
+    .rating-set{
+        width: 112px;
+        height: 18px;
+    }
+    .rating-set img{
+        width: 112px;
+        height: 18px;
+
+    }
