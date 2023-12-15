@@ -362,7 +362,7 @@ header{
         align-items: center;
         padding: 100px 0px;
         gap: 54px;
-        width: 1919px;
+        width: 1920px;
         height: 1173px;
         position: relative;
         margin-inline: auto;
@@ -480,7 +480,7 @@ header{
         padding: 100px 150px;
         gap: 103px;
         margin-inline: auto;
-        width: 1919px;
+        width: 1920px;
         height: 1165px;
     }
     .package-block{
@@ -949,4 +949,88 @@ header{
         font-size: 24px;
         line-height: 28px;
         color: #07484A;  
+    }
+    .newsletter{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 100px 0px 0px;
+        width: 1920px;
+        height: 700px;
+        margin-inline: auto;
+    }
+    .newsletter img{
+        width: 960px;
+        height: 600px;
+       
+    }
+    .subscribe-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px 150px;
+        gap: 41px;
+        width: 960px;
+        height: 600px;
+        background: #E0F6F1;
+    }
+    .subscribe{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 25px;
+        width: 675px;
+        height: 223px;
+    }
+    .subscribe h1{
+        font-family: 'Playfair Display';
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 85.31px;
+        width: 550px;
+        height: 170px;
+    }
+    .subscribe span{
+        font-weight: 700;
+    }
+    .subscribe p{
+        width: 553px;
+        height: 28px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.13px;
+    }
+    .email-input{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 16px 0px 16px 20px;
+        width: 525px;
+        height: 60px;   
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.13px;
+        color: #C4C4C4;
+        background: transparent;
+        border: none;
+    }
+    .subscribe-block button{
+        padding: 20px 24px;
+        width: 250px;
+        height: 68px;
+        background: #70908B;
+        border-radius: 6px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.13px;
+        color: #FDFBF8;
+        border: #70908B;
     }
