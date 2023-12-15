@@ -853,3 +853,100 @@ header{
         text-align: center;
         color: #07484A;
     }
+
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 150px;
+        gap: 70px;
+        width: 1920px;
+        height: 900px;
+        margin-inline: auto; 
+    }
+    .testimonials > p{
+        width: 488px;
+        height: 52px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        color: #07484A;
+    }
+    .testimonials-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 51px;
+        width: 1620px;
+        height: 410px;
+        margin-top: 30px;
+        position: relative;
+    }
+    .quote{
+        position: absolute;
+        bottom: 370px;
+        left: -80px;
+       
+    }
+    .ceo{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 4px;
+        gap: 4px;
+        width: 421px;
+        height: 410px;
+        border-radius: 20px;
+    }
+    .testimonials-block > div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 65px;
+        width: 964px;
+        height: 301px;   
+    }
+    .testimonials-block p{
+        width: 964px;
+        height: 187px;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 49px;
+        color: #07484A;
+    }
+    .name{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 11px;
+        width: 223px;
+        height: 49px;
+    }
+    .name h3{
+        width: 148px;
+        height: 19px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #07484A;
+    }
+    .name h4{
+        width: 223px;
+        height: 19px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        color: #07484A;  
+    }
