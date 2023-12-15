@@ -780,7 +780,7 @@ header{
         height: 537px;
         
     }
-    .creation__slider-item-btn {
+    .creation-slider-item-btn {
         width: 194px;
         height: 57px;
         border-radius: 6px;
@@ -792,6 +792,64 @@ header{
         opacity: 0;
         transition: opacity 0.3s ease;
     }
-    .creation-slider-item:hover .creation__slider-item-btn {
+    .creation-slider-item:hover .creation-slider-item-btn {
         opacity: 1;
+    }
+    .expediency{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 150px;
+        gap: 104px;
+        width: 1920px;
+        height: 695px;
+        background: #E0EFF6;
+        margin-inline:auto;
+    }
+    .expediency .headline-category{
+        width: 836px;
+        height: 85px;
+        padding: 0px;
+    }
+    .expediency-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0px;
+        width: 1348px;
+        height: 306px;  
+    }
+    .expediency-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 32px;
+        width: 289px;
+        height: 306px;
+    }
+
+    .expediency-item h2{
+        width: 300px;
+        height: 48px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    .expediency-item p{
+        width: 288px;
+        height: 66px;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        color: #07484A;
     }
