@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 a {
     text-decoration: none;
@@ -13,6 +14,7 @@ body {
     font-family: 'Playfair Display', serif;
     background-color: #FDFBF8;
     color: #07484A;
+    
 }
 header{
     background-image: url(images/1screen.jpg);
@@ -23,21 +25,24 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-inline: auto;
 }
 ul{
     list-style: none;
 }
 
 .navbar{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    
+    margin-inline: auto;
 }
 .nav-icons{
     display: flex;
     align-items: center;
+    margin-inline: auto;
 }
 
 .deals{
@@ -45,6 +50,7 @@ ul{
     font-style: normal;
     font-weight: 700;
     color: #07484A;
+    margin-inline: auto;
 }
 .container-main-screen{
     display: flex;
@@ -53,6 +59,7 @@ ul{
     justify-content: center;
     padding: 0px;
     gap: 52px;
+    
 }
 .title{
     display: flex;
@@ -61,18 +68,21 @@ ul{
     align-items: center;
     padding: 0px;
     gap: 16px;
+    margin-inline: auto;
 }
 .deals{
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
     color: #07484A;
+    margin-inline: auto;
 }
 .explore{
     font-family: 'Open sans';
     font-style:normal;
     font-weight:400;
     color: #07484A;
+    
 }
 
 .button-shop{
@@ -93,7 +103,7 @@ ul{
     align-items: center;
     padding: 100px 150px;
     gap: 99px;
-    width: 1920px;
+    max-width: 1920px;
     height: 1420px;
     margin-inline: auto;
 }
@@ -274,28 +284,29 @@ ul{
     margin-top: 10px;
 }  
 /* desktop */
-    .navbar{
-      width: 100%;  
-    }
+    
     .navbar-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-height: 100px;
-        min-width: 1920px;
+        height: 100px;
+        max-width: 1920px;
         width: 100%;
         padding: 26px 150px;
         background-color: rgba(255,255,255,0.3);
+        margin-inline: auto;
     }
     .nav-icons{
         gap: 58px;
         order: 2;
+        margin-inline: auto;
     }
     .nav-links{
         display: flex;
         flex-direction: row;
-        justify-content: center;
         gap: 38px;
+        justify-content: center;
+        margin-inline: auto;
     }
     .nav-link{
         font-size: 20px;
@@ -305,6 +316,7 @@ ul{
         letter-spacing: 0.01em;
         gap: 58px;
         /* transition: all 0.8s; */
+        
     }
     .nav-link:hover{
         text-decoration: underline;
@@ -326,8 +338,8 @@ ul{
         height: 26px;
     }
     .container-main-screen{
-        min-width: 1920px;
-        min-height: 980px;
+        max-width: 1920px;
+        height: 980px;
         padding: 0px 150px 150px;
         border-radius: 0px 0px 62px 62px;
     }
@@ -365,7 +377,7 @@ ul{
         align-items: center;
         padding: 100px 0px;
         gap: 54px;
-        width: 1920px;
+        max-width: 1920px;
         height: 1173px;
         position: relative;
         margin-inline: auto;
@@ -386,25 +398,12 @@ ul{
         gap: 32px;
         padding: 0px 0px 0px 292px;
         isolation: isolate;
-        /* width: 2111px; */
         width: 100%;
-        /* min-width: 1920px; */
-        /* max-width: 100%; */
         height: 585px;
         overflow-x: auto;
         overflow-y: hidden;
         padding-bottom: 100px;
     }
-    /* ::-webkit-scrollbar{
-        width: 10px;
-    }
-    ::-webkit-scrollbar-thumb{
-        width: 194px;
-        height: 10px;
-        border: 4px solid #07484A;
-        background: #07484A;
-        border-radius: 5px;
-    } */
     .products-cards::-webkit-scrollbar {
         width: 6px;
         height: 12px;
@@ -483,7 +482,7 @@ ul{
         padding: 100px 150px;
         gap: 103px;
         margin-inline: auto;
-        width: 1920px;
+        max-width: 1920px;
         height: 1165px;
     }
     .package-block{
@@ -712,13 +711,17 @@ ul{
         flex-direction: row;
         justify-content: space-between;
         margin: 100px 0px;
+        max-width: 1920px;
+        margin-inline: auto ;
     }
     .content-block-container{
-        width: 1920px;
+        max-width: 1920px;
         height: 737px;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin-inline: auto ;
+        gap: 32px;
     }
     .heading-background{
         position: absolute;
@@ -733,15 +736,15 @@ ul{
         gap: 32px;
     }
     .creation-heading{
-        margin-top: 150px;
-        padding-left: 150px;
+        width: 587px;
+        height: 537px;
+        background: #70908B;
+        border-radius: 0px 16px 16px 0px;
         padding-right: 100px;
-        width: 337px;
-        height: 220px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         gap: 32px;
         color:  #FDFBF8;
         font-family: "Playfair Display";
@@ -758,29 +761,45 @@ ul{
     .creation-more{
         font-family: "Roboto";
         font-size: 18px;
+        width: 337px;
     }
     .creation-slider{
         display: flex;
+        max-width: 1920px;
     }
 
     .creation-slider-line{
-        width: 1700px;
+        max-width: 1920px;
         position: relative;
         display: flex;
-        left: 280px;
+        gap: 26px;
+        align-items: center;
     }
-    .creation-slider-item{
+
+    #creation-slider-item-second{
+        border-radius: 16px;
+        width: 382px;
+        height: 537px;
+        position: relative;
+    }
+    #creation-slider-item-second img{
         border-radius: 16px;
         margin-right: 20px;
         width: 382px;
         height: 537px;
+        
+    }
+    .creation-slider-item{
+        border-radius: 16px;
+        width: 360px;
+        height: 507px;
         position: relative;
     }
     .creation-slider-item img{
         border-radius: 16px;
         margin-right: 20px;
-        width: 382px;
-        height: 537px;
+        width: 360px;
+        height: 507px;
         
     }
     .creation-slider-item-btn {
@@ -804,7 +823,7 @@ ul{
         align-items: center;
         padding: 100px 150px;
         gap: 104px;
-        width: 1920px;
+        max-width: 1920px;
         height: 695px;
         background: #E0EFF6;
         margin-inline:auto;
@@ -863,7 +882,7 @@ ul{
         align-items: center;
         padding: 100px 150px;
         gap: 70px;
-        width: 1920px;
+        max-width: 1920px;
         height: 900px;
         margin-inline: auto; 
     }
@@ -958,7 +977,7 @@ ul{
         flex-direction: row;
         align-items: center;
         padding: 100px 0px 0px;
-        width: 1920px;
+        max-width: 1920px;
         height: 700px;
         margin-inline: auto;
     }
