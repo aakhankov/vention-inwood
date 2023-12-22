@@ -6,85 +6,119 @@
     padding: 0;
     border: 0;
 }
-a {
+a{
     text-decoration: none;
 }
 
-body {
+body{
     font-family: 'Playfair Display', serif;
     background-color: #FDFBF8;
-    color: #07484A;
-    
+    --main-color: #07484A;
 }
-header{
+/* test */
+.header-wrap{
     background-image: url(images/1screen.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    height: 1080px;
     background-position: center center;
     border-radius: 0px 0px 50px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-inline: auto;
 }
+.site_header{
+    padding: 28px 0;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.container-main-screen{
+    width: 100%;
+    max-width: 1670px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_list{
+    width: 606px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul, ol{
+    padding: 0;
+    list-style: none;
+}
+.nav_list-item{
+        
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 132.9%;
+    letter-spacing: 0.05em;  
+}
+.nav_list-item:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.icons-list{
+    display: flex;
+    align-items: center;
+    gap: 58px;
+}
+.nav_list-item a{
+    color: var(--main-color);
+    padding-bottom: 2px;
+}
+.icons-list_item a img{
+    width: 27px;
+    height: 27px;
+}
+
+.hero-section{
+    padding: 190px;
+    border-radius: 0px 0px 62px 0px;
+}
+.hero_content{
+    max-width: 668px;
+}
+.hero_title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 85px;
+    margin-bottom: 54px;
+    color: var(--main-color);
+}
+.hero_text{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 33px;
+    color: var(--main-color);
+    margin-bottom: 54px;
+}
+.hero_btn{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 33px;
+    color: #fdfbf8;
+    border: none;
+    background-color: #70908b;
+    border-radius: 10px;
+    padding: 23.5px 54.5px;
+}
+/* test */
 ul{
     list-style: none;
 }
-
-.navbar{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    margin-inline: auto;
-}
-.nav-icons{
-    display: flex;
-    align-items: center;
-    margin-inline: auto;
-}
-
-.deals{
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    color: #07484A;
-    margin-inline: auto;
-}
-.container-main-screen{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0px;
-    gap: 52px;
-    
-}
-.title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 16px;
-    margin-inline: auto;
-}
-.deals{
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    color: #07484A;
-    margin-inline: auto;
-}
-.explore{
-    font-family: 'Open sans';
-    font-style:normal;
-    font-weight:400;
-    color: #07484A;
-    
-}
-
 .button-shop{
     background: #70908B;
     border-radius: 10px;
@@ -93,9 +127,6 @@ ul{
     font-family: 'Open sans';
     font-style: normal;
     font-weight: 700;
-}
-.logo{
-    
 }
 .category{
     display: flex;
@@ -114,9 +145,9 @@ ul{
     text-align: center;
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 4rem;
     line-height: 85px;
-    color: #07484A;
+    color: var(--main-color);
 }
 .category-block{
     display: flex;
@@ -166,7 +197,7 @@ ul{
     background: #F0F0F0;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 23px;
     border-color: transparent;
 }
@@ -190,17 +221,17 @@ ul{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 28px;
     text-align: start;
-    color: #07484A;
+    color: var(--main-color);
     align-self: stretch;
 }
 #btn-shop{
     width: 265px;
     padding: 32px 20px;
     line-height: 21px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     margin-top: none;
 }
@@ -208,8 +239,6 @@ ul{
     content: '\2192'; 
     margin-left: 18px;
 }
-
-
 .categories-grid{
     display: flex;
     flex-direction: column;
@@ -234,7 +263,6 @@ ul{
     position: relative;
     overflow: hidden;
 }
-
 .description-of-category {
     position: absolute;
     top: 50%;
@@ -247,7 +275,6 @@ ul{
     justify-content: center;
     align-items: center;
 }
-
 .category-item:hover .description-of-category {
     opacity: 1;
 }
@@ -259,13 +286,12 @@ ul{
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 400;
-    font-size: 42px;
+    font-size: 2.625rem;
     line-height: 62px;
     color: #FDFBF8;
     text-align: center;
     line-height: 79px;
     margin: 0;
-    
 }
 .button-category{
     padding: 14px 20px;
@@ -274,17 +300,16 @@ ul{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 25px;
     background: #E0EFF6;
     border-radius: 6px;   
-    color: #07484A;
+    color: var(--main-color);
     border: none;
     cursor: pointer;
     margin-top: 10px;
 }  
 /* desktop */
-    
     .navbar-container{
         display: flex;
         justify-content: space-between;
@@ -309,9 +334,9 @@ ul{
         margin-inline: auto;
     }
     .nav-link{
-        font-size: 20px;
+        font-size: 1.25px;
         line-height: 132.9%;
-        color: #07484A;
+        color: var(--main-color);
         text-decoration: none;
         letter-spacing: 0.01em;
         gap: 58px;
@@ -337,16 +362,10 @@ ul{
     .nav-icons img{
         height: 26px;
     }
-    .container-main-screen{
-        max-width: 1920px;
-        height: 980px;
-        padding: 0px 150px 150px;
-        border-radius: 0px 0px 62px 62px;
-    }
     .deals{
         width: 668px;
         height: 171px;
-        font-size: 64px;
+        font-size: 4rem;
         line-height: 85px;
         align-self: flex-start;
         margin-bottom: 15px;
@@ -354,14 +373,14 @@ ul{
     .explore{
         width: 539px;
         height: 33.06px;
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 33px;
         align-self: flex-start;
     }
     .button-shop{
         padding: 20px 40px;
         font-family: 'Open Sans';
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 33px;
         align-self: flex-start;
     } 
@@ -407,14 +426,16 @@ ul{
     .products-cards::-webkit-scrollbar {
         width: 6px;
         height: 12px;
+        margin-top: 2px;
+        background-color: #07484a2a;
     }
     
     .products-cards::-webkit-scrollbar-thumb {
        
-        background-color: #07484A;
+        background-color: var(--main-color);
         border: 3px solid transparent;
         border-radius: 9px;
-        background-clip: content-box;
+        
     }
     .product-card{
         display: flex;
@@ -468,7 +489,7 @@ ul{
         width: 265px;
         padding: 20px 20px;
         line-height: 21px;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 700;
     }
     .button-products::after {
@@ -530,7 +551,7 @@ ul{
         height: 50px;
         left: 770px;
         top: 502px;
-        background: #07484A;
+        background: var(--main-color);
         border-radius: 16px;
     }
     .larkin-block{
@@ -554,10 +575,10 @@ ul{
         height: 162px;
     }
     .larkin-content h2{
-        font-size: 36px;
+        font-size: 2.25rem;
     }
     .larkin-content h3{
-        font-size: 23px;
+        font-size: 1.4375rem;
         font-weight: 700;
     }
 
@@ -584,7 +605,7 @@ ul{
     }
     .package-larkin-description h3{
         font-weight: 700;
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     .button-more-description h4{
         display: flex;
@@ -659,7 +680,7 @@ ul{
         height: 50px;
         left: 770px;
         top: 502px;
-        background: #07484A;
+        background: var(--main-color);
         border-radius: 16px;
         left: 90%; 
         top: 80%;
@@ -750,17 +771,17 @@ ul{
         font-family: "Playfair Display";
     }
     .creation-title{
-        font-size: 48px;
+        font-size: 3rem;
         width: 337px;
     }
     .creation-subtitle{
         font-family: "Open sans";
-        font-size: 24px;
+        font-size: 1.5rem;
         width: 337px;
     }
     .creation-more{
         font-family: "Roboto";
-        font-size: 18px;
+        font-size: 1.125rem;
         width: 337px;
     }
     .creation-slider{
@@ -823,7 +844,7 @@ ul{
         align-items: center;
         padding: 100px 150px;
         gap: 104px;
-        max-width: 1920px;
+        max-width: 100%;
         height: 695px;
         background: #E0EFF6;
         margin-inline:auto;
@@ -859,7 +880,7 @@ ul{
         font-family: 'Playfair Display';
         font-style: normal;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 2.25rem;
         line-height: 48px;
         text-align: center;
     }
@@ -870,10 +891,10 @@ ul{
         font-family: sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 33px;
         text-align: center;
-        color: #07484A;
+        color: var(--main-color);
     }
 
     .testimonials{
@@ -892,9 +913,9 @@ ul{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 36px;
+        font-size: 2.25rem;
         line-height: 42px;
-        color: #07484A;
+        color: var(--main-color);
     }
     .testimonials-block{
         display: flex;
@@ -939,9 +960,9 @@ ul{
         font-family: sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 36px;
+        font-size: 2.25rem;
         line-height: 49px;
-        color: #07484A;
+        color: var(--main-color);
     }
     .name{
         display: flex;
@@ -958,9 +979,9 @@ ul{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 28px;
-        color: #07484A;
+        color: var(--main-color);
     }
     .name h4{
         width: 223px;
@@ -968,18 +989,19 @@ ul{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 300;
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 28px;
-        color: #07484A;  
+        color: var(--main-color);  
     }
     .newsletter{
         display: flex;
         flex-direction: row;
+        justify-content: center ;
         align-items: center;
-        padding: 100px 0px 0px;
-        max-width: 1920px;
-        height: 700px;
+        max-width: 100%;
         margin-inline: auto;
+        background: #E0F6F1;
+
     }
     .newsletter img{
         width: 960px;
@@ -995,7 +1017,7 @@ ul{
         gap: 41px;
         width: 960px;
         height: 600px;
-        background: #E0F6F1;
+        
     }
     .subscribe{
         display: flex;
@@ -1009,10 +1031,11 @@ ul{
     .subscribe h1{
         font-family: 'Playfair Display';
         font-weight: 400;
-        font-size: 64px;
+        font-size: 4rem;
         line-height: 85.31px;
         width: 550px;
         height: 170px;
+        color: var(--main-color);
     }
     .subscribe span{
         font-weight: 700;
@@ -1023,8 +1046,9 @@ ul{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 28.13px;
+        color: var(--main-color);
     }
     .email-input{
         display: flex;
@@ -1036,7 +1060,7 @@ ul{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 28.13px;
         color: #C4C4C4;
         background: transparent;
@@ -1051,7 +1075,7 @@ ul{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 28.13px;
         color: #FDFBF8;
         border: #70908B;
@@ -1095,39 +1119,43 @@ ul{
         font-family: "Open Sans";
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 25px;
     }
     .address-item, .footer-links li{
         font-family: "Open Sans";
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 25px;
     }
     .footer-links{
         display: flex;
-        gap: 100px;
+        flex-grow: 1;
     }
     .footer-links ul{
     }
     .account-list{
         width: 216px;
+        flex-grow: 1;
     }
     .help-list{
         width: 229px;
+        flex-grow: 1;
     }
     .shop-list{
         width: 194px;
+        flex-grow: 1;
     }
     .stuff-list{
         width: 176px;
+        flex-grow: 1;
     }
     .footer-links p{
         font-family: "Open Sans";
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 25px;
         margin-bottom: 30px;
     }
@@ -1136,7 +1164,7 @@ ul{
         font-family: "Open Sans";
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 25px;
         
     }

@@ -7,7 +7,70 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <div class="header-wrap">
+        <header class="site_header">
+            <div class="container-main-screen">
+                <div class="header">
+                    <a href="#">
+                        <img src="./images/logo/logo.png" alt="site-logo">
+                    </a>
+                    <ul class="nav_list">
+                        <li class="nav_list-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#">Products</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#">Categories</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="icons-block">
+                        <ul class="icons-list">
+                            <li class="icons-list_item">
+                                <a href="#">
+                                    <img src="/images/icons/icon-search.png" alt="search_icon">
+                                </a>
+                            </li>
+                            <li class="icons-list_item">
+                                <a href="#">
+                                    <img src="./images/icons/icon-basket.png" alt="cart">
+                                </a>
+                            </li>
+                            <li id="login" class="icons-list_item">
+                                <a href="#">
+                                    <img src="./images/icons/icon-user.png" alt="login">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="hero-section">
+          <div class="container-main-screen">
+            <div class="hero-block">
+              <div class="hero_content">
+                <h2 class="hero_title">
+                  Exclusive Deals of Furniture Collection
+                </h2>
+                <p class="hero_text">
+                  Explore different categories. Find the best deals.
+                </p>
+                <button class="hero_btn">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+
+    <!-- <header>
         <nav class="navbar">
             <div class="navbar-container">
                 <div >
@@ -20,6 +83,7 @@
                     <a class="nav-link" href="#">About</a>
                     <a class="nav-link" href="#">Contact Us</a>
                 </div>
+                
                 <div class="nav-icons">
                     <a class="nav-icon" href="#"><img class="icon" src="./images/icons/icon-search.png" alt="search"/></a>
                     <a class="nav-icon" href="#"><img class="icon" src="./images/icons/icon-basket.png" alt="basket"/></a>
@@ -34,7 +98,7 @@
             </div>
             <button class="button-shop">Shop Now</button>
         </div>
-    </header>
+    </header> -->
     <section class="category">
         <h2 class="headline-category">Explore by Category</h2>
         <div class="category-block">
@@ -113,7 +177,72 @@
     <section class="products">
         <h1 class="headline-category">Popular Products</h1>
         <img class="products-background" src="images/products/products-background.png" alt="products-background">
+       
         <div class="products-cards">
+            <div class="product-card product-card-first">
+                <img src="images/products/armchair.png" alt="armchair" >
+                <div class="product-card-description">
+                    <h3>Armchair</h3>
+                    <h4>Light single chair</h4>
+                    <h3>&dollar;145</h3>
+                </div>
+            </div>
+            <div class="product-card product-card-second">
+                <img src="images/products/premium-sofa.png" alt="premium-sofa">
+                <div class="product-card-description">
+                    <h3>Premium Sofa</h3>
+                    <h4>Light single chair</h4>
+                    <h3>&dollar;145</h3>
+                </div>
+            </div>
+            <div class="product-card product-card-third">
+                <img src="images/products/minimal-sofa.png" alt="minimal-sofa">
+                <div class="product-card-description">
+                    <h3>Minimal Sofa</h3>
+                    <h4>Light single chair</h4>
+                    <h3>&dollar;145</h3>
+                </div>
+            </div>
+            <div class="product-card product-card-fourth">
+                <img src="images/products/dining-chair.png" alt="dining-chair">
+                <div class="product-card-description">
+                    <h3>Dining Chair</h3>
+                    <h4>Light single chair</h4>
+                    <h3>&dollar;145</h3>
+                </div>
+            </div> 
+            <div class="product-card product-card-first">
+                <img src="images/products/armchair.png" alt="armchair" >
+                <div class="product-card-description">
+                    <h3>Armchair</h3>
+                    <h4>Light single chair</h4>
+                    <h3>&dollar;145</h3>
+                </div>
+            </div>
+            <div class="product-card product-card-second">
+                <img src="images/products/premium-sofa.png" alt="premium-sofa">
+                <div class="product-card-description">
+                    <h3>Premium Sofa</h3>
+                    <h4>Light single chair</h4>
+                    <h3>&dollar;145</h3>
+                </div>
+            </div>
+            <div class="product-card product-card-third">
+                <img src="images/products/minimal-sofa.png" alt="minimal-sofa">
+                <div class="product-card-description">
+                    <h3>Minimal Sofa</h3>
+                    <h4>Light single chair</h4>
+                    <h3>&dollar;145</h3>
+                </div>
+            </div>
+            <div class="product-card product-card-fourth">
+                <img src="images/products/dining-chair.png" alt="dining-chair">
+                <div class="product-card-description">
+                    <h3>Dining Chair</h3>
+                    <h4>Light single chair</h4>
+                    <h3>&dollar;145</h3>
+                </div>
+            </div> 
             <div class="product-card product-card-first">
                 <img src="images/products/armchair.png" alt="armchair" >
                 <div class="product-card-description">
@@ -189,6 +318,7 @@
                                 </div>
                                 <div class="button-more-description">
                                     <h4>See More <img src="images/icons/icon-down-arrow.png" alt="see-more-arrow"></h4>
+                                    
                                 </div>
                             </div>
                             <div class="package-set-2">
@@ -269,28 +399,28 @@
                     <p class="creation-subtitle">Designed in our studio</p>
                     <p class="creation-more">More</p>
                 </div>
-                <div class="creation-slider-item" id="creation-slider-item-second">
-                    <div class="creation-slider-item-back">
-                        <button class="creation-slider-item-btn">Explore All Rooms</button>
+                    <div class="creation-slider-item" id="creation-slider-item-second">
+                        <div class="creation-slider-item-back">
+                            <button class="creation-slider-item-btn">Explore All Rooms</button>
+                        </div>
+                        <img src="images/content/content-1.jpg" alt="room" class="creation-slider-item-img">
                     </div>
-                    <img src="images/content/content-1.jpg" alt="room" class="creation-slider-item-img">
-                </div>
-                <div class="creation-slider-item">
-                    <div class="creation-slider-item-back">
-                        <button class="creation-slider-item-btn">Explore All Rooms</button>
+                    <div class="creation-slider-item">
+                        <div class="creation-slider-item-back">
+                            <button class="creation-slider-item-btn">Explore All Rooms</button>
+                        </div>
+                        <img src="images/content/content-2.jpg" alt="room" class="creation-slider-item-img">
                     </div>
-                    <img src="images/content/content-2.jpg" alt="room" class="creation-slider-item-img">
-                </div>
-                <div class="creation-slider-item">
-                    <div class="creation-slider-item-back">
-                        <button class="creation-slider-item-btn">Explore All Rooms</button>
+                    <div class="creation-slider-item">
+                        <div class="creation-slider-item-back">
+                            <button class="creation-slider-item-btn">Explore All Rooms</button>
+                        </div>
+                        <img src="images/content/content-3.jpg" alt="room" class="creation-slider-item-img">
                     </div>
-                    <img src="images/content/content-3.jpg" alt="room" class="creation-slider-item-img">
                 </div>
-            </div>
         </div>
     </section>
-    <section class="expediency">
+   <section class="expediency">
         <h1 class="headline-category">Benefits for your expediency</h1>
         <div class="expediency-content">
             <div class="expediency-item">
@@ -319,14 +449,14 @@
             <div>
                 <p>"My experience with Mark is a complete success, from customer service,
                     wide range of products, clean store, purchasing experience, the newsletter. Thank you."</p>
-                <div class="name">
-                    <h3>Leona Paul</h3>
-                    <h4>CEO of Floatcom</h4>
-                </div>
+                    <div class="name">
+                        <h3>Leona Paul</h3>
+                        <h4>CEO of Floatcom</h4>
+                    </div>
             </div>              
         </div>
     </section>
-    <section class="newsletter">
+<section class="newsletter">
         <img src="images/newsletter/news.jpg" alt="news">
         <div class="subscribe-block">
             <div class="subscribe">
